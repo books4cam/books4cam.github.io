@@ -66,6 +66,9 @@
     tr:nth-child(even) {
       background-color: #f9f9f9;
     }
+    b{
+      text-align: justify;
+    }
   </style>
 </head>
 <body>
@@ -74,6 +77,7 @@
 <p id="mainp">__Developed_By_Cameron_Threadgill__
               __Version-Alpha.2.1._______________
 </p>
+<p id="mainb" class="b"></p>
 
   <div>
     <button id="veiwlstbtn">View List</button>
@@ -124,6 +128,7 @@
 
     const mainh = document.getElementById("mainh");
     const mainp = document.getElementById("mainp");
+    const mainb = document.getElementById("mainb");
     const bookSection = document.getElementById("bookSection");
     const bookList = document.getElementById("bookList");
     const formContainer = document.getElementById("formContainer");
@@ -234,7 +239,7 @@
     document.getElementById("Readmebtn").addEventListener("click", () => {
       resetViews();
       mainh.textContent = "README Page";
-      mainp.textContent = `
+      mainb.textContent = `
 ~From Books to Browser: The Story Behind This Website-
 Welcome to the repository for this website! This project
 is the direct result of a dedicated learning journey powered
